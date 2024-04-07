@@ -1,0 +1,684 @@
+construct Candies 0 0
+construct Candies 1 1
+construct Candies 100 2
+construct Candies 3467 3
+construct Candies 777 4
+construct Candies 10 3455
+construct Candies 2 344
+construct Candies 4 444
+construct FortuneCookie 0
+construct FortuneCookie 1
+construct FortuneCookie 1
+construct FortuneCookie 100
+construct FortuneCookie 23456
+construct MinionToy 0
+construct MinionToy 1
+construct MinionToy 2
+construct MinionToy 3
+construct MinionToy 4
+construct MinionToy 5
+construct MinionToy 6
+construct MinionToy 7
+construct MinionToy 56666
+construct MinionToy 23
+construct MinionToy 111
+construct BagFIFO
+size BagFIFO
+putSurprize BagFIFO Candies 100 0
+size BagFIFO
+putSurprize BagFIFO MinionToy 2
+size BagFIFO
+putSurprize BagFIFO Candies 8 2
+size BagFIFO
+putSurprize BagFIFO FortuneCookie 0
+size BagFIFO
+putSurprize BagFIFO FortuneCookie 1
+size BagFIFO
+takeout BagFIFO
+size BagFIFO
+takeout BagFIFO
+size BagFIFO
+takeout BagFIFO
+size BagFIFO
+takeout BagFIFO
+size BagFIFO
+takeout BagFIFO
+size BagFIFO
+construct BagLIFO
+size BagLIFO
+putSurprize BagLIFO Candies 100 0
+size BagLIFO
+putSurprize BagLIFO MinionToy 2
+size BagLIFO
+putSurprize BagLIFO Candies 8 2
+size BagLIFO
+putSurprize BagLIFO FortuneCookie 0
+size BagLIFO
+putSurprize BagLIFO FortuneCookie 1
+size BagLIFO
+takeout BagLIFO
+size BagLIFO
+takeout BagLIFO
+size BagLIFO
+takeout BagLIFO
+size BagLIFO
+takeout BagLIFO
+size BagLIFO
+takeout BagLIFO
+size BagLIFO
+construct BagRandom
+size BagRandom
+putSurprize BagRandom Candies 100 0
+size BagRandom
+putSurprize BagRandom MinionToy 2
+size BagRandom
+putSurprize BagRandom Candies 8 2
+size BagRandom
+putSurprize BagRandom FortuneCookie 0
+size BagRandom
+putSurprize BagRandom FortuneCookie 1
+size BagRandom
+takeout BagRandom
+size BagRandom
+takeout BagRandom
+size BagRandom
+takeout BagRandom
+size BagRandom
+takeout BagRandom
+size BagRandom
+takeout BagRandom
+size BagRandom
+construct GiveSurpriseAndApplause FIFO 1
+putSurprize GiveSurpriseAndApplause FortuneCookie 234
+putSurprize GiveSurpriseAndApplause Candies 10 234
+putSurprize GiveSurpriseAndApplause MinionToy 13
+giveAll GiveSurpriseAndApplause
+construct GiveSurpriseAndApplause FIFO 1
+putSurprize GiveSurpriseAndApplause FortuneCookie 234
+putSurprize GiveSurpriseAndApplause Candies 10 234
+putSurprize GiveSurpriseAndApplause MinionToy 13
+give GiveSurpriseAndApplause
+give GiveSurpriseAndApplause
+give GiveSurpriseAndApplause
+construct GiveSurpriseAndApplause LIFO 1
+putSurprize GiveSurpriseAndApplause FortuneCookie 234
+putSurprize GiveSurpriseAndApplause Candies 10 234
+putSurprize GiveSurpriseAndApplause MinionToy 13
+giveAll GiveSurpriseAndApplause
+construct GiveSurpriseAndApplause LIFO 1
+putSurprize GiveSurpriseAndApplause FortuneCookie 234
+putSurprize GiveSurpriseAndApplause Candies 10 234
+putSurprize GiveSurpriseAndApplause MinionToy 13
+give GiveSurpriseAndApplause
+give GiveSurpriseAndApplause
+give GiveSurpriseAndApplause
+construct GiveSurpriseAndApplause RANDOM 1
+putSurprize GiveSurpriseAndApplause FortuneCookie 234
+putSurprize GiveSurpriseAndApplause Candies 10 234
+putSurprize GiveSurpriseAndApplause MinionToy 13
+giveAll GiveSurpriseAndApplause
+construct GiveSurpriseAndApplause RANDOM 1
+putSurprize GiveSurpriseAndApplause FortuneCookie 234
+putSurprize GiveSurpriseAndApplause Candies 10 234
+putSurprize GiveSurpriseAndApplause MinionToy 13
+give GiveSurpriseAndApplause
+give GiveSurpriseAndApplause
+give GiveSurpriseAndApplause
+construct GiveSurpriseAndHug FIFO 1
+putSurprize GiveSurpriseAndHug FortuneCookie 234
+putSurprize GiveSurpriseAndHug Candies 10 234
+putSurprize GiveSurpriseAndHug MinionToy 13
+giveAll GiveSurpriseAndHug
+construct GiveSurpriseAndHug FIFO 1
+putSurprize GiveSurpriseAndHug FortuneCookie 234
+putSurprize GiveSurpriseAndHug Candies 10 234
+putSurprize GiveSurpriseAndHug MinionToy 13
+give GiveSurpriseAndHug
+give GiveSurpriseAndHug
+give GiveSurpriseAndHug
+construct GiveSurpriseAndHug LIFO 1
+putSurprize GiveSurpriseAndHug FortuneCookie 234
+putSurprize GiveSurpriseAndHug Candies 10 234
+putSurprize GiveSurpriseAndHug MinionToy 13
+giveAll GiveSurpriseAndHug
+construct GiveSurpriseAndHug LIFO 1
+putSurprize GiveSurpriseAndHug FortuneCookie 234
+putSurprize GiveSurpriseAndHug Candies 10 234
+putSurprize GiveSurpriseAndHug MinionToy 13
+give GiveSurpriseAndHug
+give GiveSurpriseAndHug
+give GiveSurpriseAndHug
+construct GiveSurpriseAndHug RANDOM 1
+putSurprize GiveSurpriseAndHug FortuneCookie 234
+putSurprize GiveSurpriseAndHug Candies 10 234
+putSurprize GiveSurpriseAndHug MinionToy 13
+giveAll GiveSurpriseAndHug
+construct GiveSurpriseAndHug RANDOM 1
+putSurprize GiveSurpriseAndHug FortuneCookie 234
+putSurprize GiveSurpriseAndHug Candies 10 234
+putSurprize GiveSurpriseAndHug MinionToy 13
+give GiveSurpriseAndHug
+give GiveSurpriseAndHug
+give GiveSurpriseAndHug
+construct GiveSurpriseAndSing  LIFO 1
+putSurprize GiveSurpriseAndSing FortuneCookie 234
+putSurprize GiveSurpriseAndSing Candies 10 234
+putSurprize GiveSurpriseAndSing MinionToy 13
+giveAll GiveSurpriseAndSing
+construct GiveSurpriseAndSing LIFO 1
+putSurprize GiveSurpriseAndSing FortuneCookie 234
+putSurprize GiveSurpriseAndSing Candies 10 234
+putSurprize GiveSurpriseAndSing MinionToy 13
+give GiveSurpriseAndSing
+give GiveSurpriseAndSing
+give GiveSurpriseAndSing
+construct GiveSurpriseAndSing  FIFO 1
+putSurprize GiveSurpriseAndSing FortuneCookie 234
+putSurprize GiveSurpriseAndSing Candies 10 234
+putSurprize GiveSurpriseAndSing MinionToy 13
+giveAll GiveSurpriseAndSing
+construct GiveSurpriseAndSing FIFO 1
+putSurprize GiveSurpriseAndSing FortuneCookie 234
+putSurprize GiveSurpriseAndSing Candies 10 234
+putSurprize GiveSurpriseAndSing MinionToy 13
+give GiveSurpriseAndSing
+give GiveSurpriseAndSing
+give GiveSurpriseAndSing
+construct GiveSurpriseAndSing  RANDOM 1
+putSurprize GiveSurpriseAndSing FortuneCookie 234
+putSurprize GiveSurpriseAndSing Candies 10 234
+putSurprize GiveSurpriseAndSing MinionToy 13
+giveAll GiveSurpriseAndSing
+construct GiveSurpriseAndSing RANDOM 1
+putSurprize GiveSurpriseAndSing FortuneCookie 234
+putSurprize GiveSurpriseAndSing Candies 10 234
+putSurprize GiveSurpriseAndSing MinionToy 13
+give GiveSurpriseAndSing
+give GiveSurpriseAndSing
+give GiveSurpriseAndSing
+construct BagFIFO
+construct BagLIFO
+size BagFIFO
+size BagLIFO
+putSurprize BagFIFO Candies 100 0
+putSurprize BagFIFO MinionToy 2
+putSurprize BagFIFO FortuneCookie 45
+putSurprize BagLIFO Candies 3 0
+putSurprize BagLIFO MinionToy 56
+putSurprize BagLIFO FortuneCookie 123
+size BagFIFO
+size BagLIFO
+putBag BagFIFO BagLIFO
+size BagFIFO
+size BagLIFO
+takeout BagFIFO
+size BagFIFO
+takeout BagFIFO
+size BagFIFO
+takeout BagFIFO
+size BagFIFO
+takeout BagFIFO
+size BagFIFO
+takeout BagFIFO
+size BagFIFO
+takeout BagFIFO
+size BagFIFO
+construct BagFIFO
+construct BagRandom
+size BagFIFO
+size BagRandom
+putSurprize BagFIFO Candies 100 0
+putSurprize BagFIFO MinionToy 2
+putSurprize BagFIFO FortuneCookie 45
+putSurprize BagRandom Candies 3 0
+putSurprize BagRandom MinionToy 56
+putSurprize BagRandom FortuneCookie 123
+size BagFIFO
+size BagRandom
+putBag BagFIFO BagRandom
+size BagFIFO
+size BagRandom
+takeout BagFIFO
+size BagFIFO
+takeout BagFIFO
+size BagFIFO
+takeout BagFIFO
+size BagFIFO
+takeout BagFIFO
+size BagFIFO
+takeout BagFIFO
+size BagFIFO
+takeout BagFIFO
+size BagFIFO
+construct BagLIFO
+construct BagRandom
+size BagLIFO
+size BagRandom
+putSurprize BagLIFO Candies 100 0
+putSurprize BagLIFO MinionToy 2
+putSurprize BagLIFO FortuneCookie 45
+putSurprize BagRandom Candies 3 0
+putSurprize BagRandom MinionToy 56
+putSurprize BagRandom FortuneCookie 123
+size BagLIFO
+size BagRandom
+putBag BagLIFO BagRandom
+size BagLIFO
+size BagRandom
+takeout BagLIFO
+size BagLIFO
+takeout BagLIFO
+size BagLIFO
+takeout BagLIFO
+size BagLIFO
+takeout BagLIFO
+size BagLIFO
+takeout BagLIFO
+size BagLIFO
+takeout BagLIFO
+size BagLIFO
+construct BagLIFO
+construct BagFIFO
+size BagLIFO
+size BagFIFO
+putSurprize BagLIFO Candies 100 0
+putSurprize BagLIFO MinionToy 2
+putSurprize BagLIFO FortuneCookie 45
+putSurprize BagFIFO Candies 3 0
+putSurprize BagFIFO MinionToy 56
+putSurprize BagFIFO FortuneCookie 123
+size BagLIFO
+size BagFIFO
+putBag BagLIFO BagFIFO
+size BagLIFO
+size BagFIFO
+takeout BagLIFO
+size BagLIFO
+takeout BagLIFO
+size BagLIFO
+takeout BagLIFO
+size BagLIFO
+takeout BagLIFO
+size BagLIFO
+takeout BagLIFO
+size BagLIFO
+takeout BagLIFO
+size BagLIFO
+construct BagRandom
+construct BagFIFO
+size BagRandom
+size BagFIFO
+putSurprize BagRandom Candies 100 0
+putSurprize BagRandom MinionToy 2
+putSurprize BagRandom FortuneCookie 45
+putSurprize BagFIFO Candies 3 0
+putSurprize BagFIFO MinionToy 56
+putSurprize BagFIFO FortuneCookie 123
+size BagRandom
+size BagFIFO
+putBag BagRandom BagFIFO
+size BagRandom
+size BagFIFO
+takeout BagRandom
+size BagRandom
+takeout BagRandom
+size BagRandom
+takeout BagRandom
+size BagRandom
+takeout BagRandom
+size BagRandom
+takeout BagRandom
+size BagRandom
+takeout BagRandom
+size BagRandom
+construct BagRandom
+construct BagLIFO
+size BagRandom
+size BagLIFO
+putSurprize BagRandom Candies 100 0
+putSurprize BagRandom MinionToy 2
+putSurprize BagRandom FortuneCookie 45
+putSurprize BagLIFO Candies 3 0
+putSurprize BagLIFO MinionToy 56
+putSurprize BagLIFO FortuneCookie 123
+size BagRandom
+size BagLIFO
+putBag BagRandom BagLIFO
+size BagRandom
+size BagLIFO
+takeout BagRandom
+size BagRandom
+takeout BagRandom
+size BagRandom
+takeout BagRandom
+size BagRandom
+takeout BagRandom
+size BagRandom
+takeout BagRandom
+size BagRandom
+takeout BagRandom
+size BagRandom
+construct GiveSurpriseAndApplause FIFO 1
+construct BagFIFO
+putSurprize GiveSurpriseAndApplause Candies 100 0
+putSurprize GiveSurpriseAndApplause MinionToy 2
+putSurprize GiveSurpriseAndApplause FortuneCookie 45
+putSurprize BagFIFO Candies 3 0
+putSurprize BagFIFO MinionToy 56
+putSurprize BagFIFO FortuneCookie 123
+size BagFIFO
+putBag GiveSurpriseAndApplause BagFIFO
+size BagFIFO
+giveAll GiveSurpriseAndApplause
+construct GiveSurpriseAndApplause FIFO 1
+construct BagLIFO
+putSurprize GiveSurpriseAndApplause Candies 100 0
+putSurprize GiveSurpriseAndApplause MinionToy 2
+putSurprize GiveSurpriseAndApplause FortuneCookie 45
+putSurprize BagLIFO Candies 3 0
+putSurprize BagLIFO MinionToy 56
+putSurprize BagLIFO FortuneCookie 123
+size BagLIFO
+putBag GiveSurpriseAndApplause BagLIFO
+size BagLIFO
+giveAll GiveSurpriseAndApplause
+construct GiveSurpriseAndApplause FIFO 1
+construct BagRandom
+putSurprize GiveSurpriseAndApplause Candies 100 0
+putSurprize GiveSurpriseAndApplause MinionToy 2
+putSurprize GiveSurpriseAndApplause FortuneCookie 45
+putSurprize BagRandom Candies 3 0
+putSurprize BagRandom MinionToy 56
+putSurprize BagRandom FortuneCookie 123
+size BagRandom
+putBag GiveSurpriseAndApplause BagRandom
+size BagRandom
+giveAll GiveSurpriseAndApplause
+construct GiveSurpriseAndApplause LIFO 1
+construct BagFIFO
+putSurprize GiveSurpriseAndApplause Candies 100 0
+putSurprize GiveSurpriseAndApplause MinionToy 2
+putSurprize GiveSurpriseAndApplause FortuneCookie 45
+putSurprize BagFIFO Candies 3 0
+putSurprize BagFIFO MinionToy 56
+putSurprize BagFIFO FortuneCookie 123
+size BagFIFO
+putBag GiveSurpriseAndApplause BagFIFO
+size BagFIFO
+giveAll GiveSurpriseAndApplause
+construct GiveSurpriseAndApplause LIFO 1
+construct BagLIFO
+putSurprize GiveSurpriseAndApplause Candies 100 0
+putSurprize GiveSurpriseAndApplause MinionToy 2
+putSurprize GiveSurpriseAndApplause FortuneCookie 45
+putSurprize BagLIFO Candies 3 0
+putSurprize BagLIFO MinionToy 56
+putSurprize BagLIFO FortuneCookie 123
+size BagLIFO
+putBag GiveSurpriseAndApplause BagLIFO
+size BagLIFO
+giveAll GiveSurpriseAndApplause
+construct GiveSurpriseAndApplause LIFO 1
+construct BagRandom
+putSurprize GiveSurpriseAndApplause Candies 100 0
+putSurprize GiveSurpriseAndApplause MinionToy 2
+putSurprize GiveSurpriseAndApplause FortuneCookie 45
+putSurprize BagRandom Candies 3 0
+putSurprize BagRandom MinionToy 56
+putSurprize BagRandom FortuneCookie 123
+size BagRandom
+putBag GiveSurpriseAndApplause BagRandom
+size BagRandom
+giveAll GiveSurpriseAndApplause
+construct GiveSurpriseAndApplause RANDOM 1
+construct BagFIFO
+putSurprize GiveSurpriseAndApplause Candies 100 0
+putSurprize GiveSurpriseAndApplause MinionToy 2
+putSurprize GiveSurpriseAndApplause FortuneCookie 45
+putSurprize BagFIFO Candies 3 0
+putSurprize BagFIFO MinionToy 56
+putSurprize BagFIFO FortuneCookie 123
+size BagFIFO
+putBag GiveSurpriseAndApplause BagFIFO
+size BagFIFO
+giveAll GiveSurpriseAndApplause
+construct GiveSurpriseAndApplause RANDOM 1
+construct BagLIFO
+putSurprize GiveSurpriseAndApplause Candies 100 0
+putSurprize GiveSurpriseAndApplause MinionToy 2
+putSurprize GiveSurpriseAndApplause FortuneCookie 45
+putSurprize BagLIFO Candies 3 0
+putSurprize BagLIFO MinionToy 56
+putSurprize BagLIFO FortuneCookie 123
+size BagLIFO
+putBag GiveSurpriseAndApplause BagLIFO
+size BagLIFO
+giveAll GiveSurpriseAndApplause
+construct GiveSurpriseAndApplause RANDOM 1
+construct BagRandom
+putSurprize GiveSurpriseAndApplause Candies 100 0
+putSurprize GiveSurpriseAndApplause MinionToy 2
+putSurprize GiveSurpriseAndApplause FortuneCookie 45
+putSurprize BagRandom Candies 3 0
+putSurprize BagRandom MinionToy 56
+putSurprize BagRandom FortuneCookie 123
+size BagRandom
+putBag GiveSurpriseAndApplause BagRandom
+size BagRandom
+giveAll GiveSurpriseAndApplause
+construct GiveSurpriseAndSing RANDOM 1
+construct BagFIFO
+putSurprize GiveSurpriseAndSing Candies 100 0
+putSurprize GiveSurpriseAndSing MinionToy 2
+putSurprize GiveSurpriseAndSing FortuneCookie 45
+putSurprize BagFIFO Candies 3 0
+putSurprize BagFIFO MinionToy 56
+putSurprize BagFIFO FortuneCookie 123
+size BagFIFO
+putBag GiveSurpriseAndSing BagFIFO
+size BagFIFO
+giveAll GiveSurpriseAndSing
+construct GiveSurpriseAndSing RANDOM 1
+construct BagLIFO
+putSurprize GiveSurpriseAndSing Candies 100 0
+putSurprize GiveSurpriseAndSing MinionToy 2
+putSurprize GiveSurpriseAndSing FortuneCookie 45
+putSurprize BagLIFO Candies 3 0
+putSurprize BagLIFO MinionToy 56
+putSurprize BagLIFO FortuneCookie 123
+size BagLIFO
+putBag GiveSurpriseAndSing BagLIFO
+size BagLIFO
+giveAll GiveSurpriseAndSing
+construct GiveSurpriseAndSing RANDOM 1
+construct BagRandom
+putSurprize GiveSurpriseAndSing Candies 100 0
+putSurprize GiveSurpriseAndSing MinionToy 2
+putSurprize GiveSurpriseAndSing FortuneCookie 45
+putSurprize BagRandom Candies 3 0
+putSurprize BagRandom MinionToy 56
+putSurprize BagRandom FortuneCookie 123
+size BagRandom
+putBag GiveSurpriseAndSing BagRandom
+size BagRandom
+giveAll GiveSurpriseAndSing
+construct GiveSurpriseAndSing FIFO 1
+construct BagFIFO
+putSurprize GiveSurpriseAndSing Candies 100 0
+putSurprize GiveSurpriseAndSing MinionToy 2
+putSurprize GiveSurpriseAndSing FortuneCookie 45
+putSurprize BagFIFO Candies 3 0
+putSurprize BagFIFO MinionToy 56
+putSurprize BagFIFO FortuneCookie 123
+size BagFIFO
+putBag GiveSurpriseAndSing BagFIFO
+size BagFIFO
+giveAll GiveSurpriseAndSing
+construct GiveSurpriseAndSing FIFO 1
+construct BagLIFO
+putSurprize GiveSurpriseAndSing Candies 100 0
+putSurprize GiveSurpriseAndSing MinionToy 2
+putSurprize GiveSurpriseAndSing FortuneCookie 45
+putSurprize BagLIFO Candies 3 0
+putSurprize BagLIFO MinionToy 56
+putSurprize BagLIFO FortuneCookie 123
+size BagLIFO
+putBag GiveSurpriseAndSing BagLIFO
+size BagLIFO
+giveAll GiveSurpriseAndSing
+construct GiveSurpriseAndSing FIFO 1
+construct BagRandom
+putSurprize GiveSurpriseAndSing Candies 100 0
+putSurprize GiveSurpriseAndSing MinionToy 2
+putSurprize GiveSurpriseAndSing FortuneCookie 45
+putSurprize BagRandom Candies 3 0
+putSurprize BagRandom MinionToy 56
+putSurprize BagRandom FortuneCookie 123
+size BagRandom
+putBag GiveSurpriseAndSing BagRandom
+size BagRandom
+giveAll GiveSurpriseAndSing
+construct GiveSurpriseAndSing LIFO 1
+construct BagFIFO
+putSurprize GiveSurpriseAndSing Candies 100 0
+putSurprize GiveSurpriseAndSing MinionToy 2
+putSurprize GiveSurpriseAndSing FortuneCookie 45
+putSurprize BagFIFO Candies 3 0
+putSurprize BagFIFO MinionToy 56
+putSurprize BagFIFO FortuneCookie 123
+size BagFIFO
+putBag GiveSurpriseAndSing BagFIFO
+size BagFIFO
+giveAll GiveSurpriseAndSing
+construct GiveSurpriseAndSing LIFO 1
+construct BagLIFO
+putSurprize GiveSurpriseAndSing Candies 100 0
+putSurprize GiveSurpriseAndSing MinionToy 2
+putSurprize GiveSurpriseAndSing FortuneCookie 45
+putSurprize BagLIFO Candies 3 0
+putSurprize BagLIFO MinionToy 56
+putSurprize BagLIFO FortuneCookie 123
+size BagLIFO
+putBag GiveSurpriseAndSing BagLIFO
+size BagLIFO
+giveAll GiveSurpriseAndSing
+construct GiveSurpriseAndSing LIFO 1
+construct BagRandom
+putSurprize GiveSurpriseAndSing Candies 100 0
+putSurprize GiveSurpriseAndSing MinionToy 2
+putSurprize GiveSurpriseAndSing FortuneCookie 45
+putSurprize BagRandom Candies 3 0
+putSurprize BagRandom MinionToy 56
+putSurprize BagRandom FortuneCookie 123
+size BagRandom
+putBag GiveSurpriseAndSing BagRandom
+size BagRandom
+giveAll GiveSurpriseAndSing
+construct GiveSurpriseAndHug RANDOM 1
+construct BagFIFO
+putSurprize GiveSurpriseAndHug Candies 100 0
+putSurprize GiveSurpriseAndHug MinionToy 2
+putSurprize GiveSurpriseAndHug FortuneCookie 45
+putSurprize BagFIFO Candies 3 0
+putSurprize BagFIFO MinionToy 56
+putSurprize BagFIFO FortuneCookie 123
+size BagFIFO
+putBag GiveSurpriseAndHug BagFIFO
+size BagFIFO
+giveAll GiveSurpriseAndHug
+construct GiveSurpriseAndHug RANDOM 1
+construct BagLIFO
+putSurprize GiveSurpriseAndHug Candies 100 0
+putSurprize GiveSurpriseAndHug MinionToy 2
+putSurprize GiveSurpriseAndHug FortuneCookie 45
+putSurprize BagLIFO Candies 3 0
+putSurprize BagLIFO MinionToy 56
+putSurprize BagLIFO FortuneCookie 123
+size BagLIFO
+putBag GiveSurpriseAndHug BagLIFO
+size BagLIFO
+giveAll GiveSurpriseAndHug
+construct GiveSurpriseAndHug RANDOM 1
+construct BagRandom
+putSurprize GiveSurpriseAndHug Candies 100 0
+putSurprize GiveSurpriseAndHug MinionToy 2
+putSurprize GiveSurpriseAndHug FortuneCookie 45
+putSurprize BagRandom Candies 3 0
+putSurprize BagRandom MinionToy 56
+putSurprize BagRandom FortuneCookie 123
+size BagRandom
+putBag GiveSurpriseAndHug BagRandom
+size BagRandom
+giveAll GiveSurpriseAndHug
+construct GiveSurpriseAndHug FIFO 1
+construct BagFIFO
+putSurprize GiveSurpriseAndHug Candies 100 0
+putSurprize GiveSurpriseAndHug MinionToy 2
+putSurprize GiveSurpriseAndHug FortuneCookie 45
+putSurprize BagFIFO Candies 3 0
+putSurprize BagFIFO MinionToy 56
+putSurprize BagFIFO FortuneCookie 123
+size BagFIFO
+putBag GiveSurpriseAndHug BagFIFO
+size BagFIFO
+giveAll GiveSurpriseAndHug
+construct GiveSurpriseAndHug FIFO 1
+construct BagLIFO
+putSurprize GiveSurpriseAndHug Candies 100 0
+putSurprize GiveSurpriseAndHug MinionToy 2
+putSurprize GiveSurpriseAndHug FortuneCookie 45
+putSurprize BagLIFO Candies 3 0
+putSurprize BagLIFO MinionToy 56
+putSurprize BagLIFO FortuneCookie 123
+size BagLIFO
+putBag GiveSurpriseAndHug BagLIFO
+size BagLIFO
+giveAll GiveSurpriseAndHug
+construct GiveSurpriseAndHug FIFO 1
+construct BagRandom
+putSurprize GiveSurpriseAndHug Candies 100 0
+putSurprize GiveSurpriseAndHug MinionToy 2
+putSurprize GiveSurpriseAndHug FortuneCookie 45
+putSurprize BagRandom Candies 3 0
+putSurprize BagRandom MinionToy 56
+putSurprize BagRandom FortuneCookie 123
+size BagRandom
+putBag GiveSurpriseAndHug BagRandom
+size BagRandom
+giveAll GiveSurpriseAndHug
+construct GiveSurpriseAndHug LIFO 1
+construct BagFIFO
+putSurprize GiveSurpriseAndHug Candies 100 0
+putSurprize GiveSurpriseAndHug MinionToy 2
+putSurprize GiveSurpriseAndHug FortuneCookie 45
+putSurprize BagFIFO Candies 3 0
+putSurprize BagFIFO MinionToy 56
+putSurprize BagFIFO FortuneCookie 123
+size BagFIFO
+putBag GiveSurpriseAndHug BagFIFO
+size BagFIFO
+giveAll GiveSurpriseAndHug
+construct GiveSurpriseAndHug LIFO 1
+construct BagLIFO
+putSurprize GiveSurpriseAndHug Candies 100 0
+putSurprize GiveSurpriseAndHug MinionToy 2
+putSurprize GiveSurpriseAndHug FortuneCookie 45
+putSurprize BagLIFO Candies 3 0
+putSurprize BagLIFO MinionToy 56
+putSurprize BagLIFO FortuneCookie 123
+size BagLIFO
+putBag GiveSurpriseAndHug BagLIFO
+size BagLIFO
+giveAll GiveSurpriseAndHug
+construct GiveSurpriseAndHug LIFO 1
+construct BagRandom
+putSurprize GiveSurpriseAndHug Candies 100 0
+putSurprize GiveSurpriseAndHug MinionToy 2
+putSurprize GiveSurpriseAndHug FortuneCookie 45
+putSurprize BagRandom Candies 3 0
+putSurprize BagRandom MinionToy 56
+putSurprize BagRandom FortuneCookie 123
+size BagRandom
+putBag GiveSurpriseAndHug BagRandom
+size BagRandom
+giveAll GiveSurpriseAndHug

@@ -1,0 +1,80 @@
+1. Se construiesc surprize Candies, FortuneCookie si MinionToy.
+- Se initializeaza obiecte noi de tipul Candies cu numarul si tipul de bomboane specificate. (construct Candies)
+- Se initializeaza obiecte noi de tipul FortuneCookie cu un mesaj conform index-ului. (construct FortuneCookie ) 
+- Se initializeaza obiecte noi de tipul MinionToy cu un nume conform index-ului. (construct MinionToy)
+
+2. Pentru fiecare tip de tolba (FIFO, LIFO si RANDOM):
+- Se construieste tolba: BagFIFO, BagLIFO sau BagRandom (construct)
+- Se adauga surprize Candies, MinionToy si FortuneCookie in tolba (putSurprize)
+- Se verifica dimensiunea tolbei inainte si dupa fiecare operatie de adaugare (size)
+- Se extrage cate o surpriză din tolba (takeout)
+- Se verifica dimensiunea tolbei după fiecare operatie de extragere (size)
+
+3. Pentru fiecare mod de impartire al surprizelor (GiveSurpriseAndApplause, GiveSurpriseAndSing si GiveSurpriseAndHug):
+- Se construieste un obiect cu un comportament specific (FIFO, LIFO sau Random) si timp de asteptare 1 secunda (construct)
+- Se pun surprize Candies, MinionToy si FortuneCookie (putSurprize)
+- Se ofera din prima toate surprizele (giveAll)
+- Apoi, se construieste din nou acelasi obiect, dar se ofera cate o surpriza pe rand (give)
+
+Acest scenariu se testeaza pentru fiecare din urmatoarele combinatii:
+- GiveSurpriseAndApplause - FIFO 
+- GiveSurpriseAndApplause - LIFO
+- GiveSurpriseAndApplause - RANDOM
+- GiveSurpriseAndSing - FIFO 
+- GiveSurpriseAndSing - LIFO
+- GiveSurpriseAndSing - RANDOM
+- GiveSurpriseAndHug - FIFO 
+- GiveSurpriseAndHug - LIFO
+- GiveSurpriseAndHug - RANDOM
+
+4. Se construiesc 2 tolbe de tipuri diferite pentru a testa contopirea a 2 tolbe. (Prima tolba va contine toate surprizele)
+- Se afiseaza dimensiunea primei tolbe. (size)
+- Se afiseaza dimensiunea celei de a doua tolbe.
+- Se pun surprize in prima tolba. (putSurprize)
+- Se pun surprize în a doua tolba.
+- Se afiseaza dimensiunea primei tolbe. (size)
+- Se afiseaza dimensiunea celei de a doua tolbe.
+- Se adauga la prima tolba continutul celei de a doua. (putBag)
+- Se afiseaza dimensiunea primei tolbe dupa transfer. (size)
+- Se afiseaza dimensiunea celei de a doua tolbe dupa transfer.
+- Se extrage cate o surpriza din prima tolba pana se goleste tolba. (takeout)
+- Dupa fiecare extragere se verifica dimensiunea. (size)
+
+Acest scenariu se testeaza pentru urmatoarele combinatii:
+- BagFIFO + BagLIFO
+- BagFIFO + BagRandom
+- BagLIFO + BagFIFO
+- BagLIFO + BagRandom
+- BagRandom + BagFIFO 
+- BagRandom + BagLIFO 
+
+Se testeaza acelasi scenariu si pentru urmatoarele combinatii:
+- GiveSurpriseAndApplause FIFO + BagFIFO 
+- GiveSurpriseAndApplause FIFO + BagLIFO
+- GiveSurpriseAndApplause FIFO + BagRandom
+- GiveSurpriseAndApplause LIFO + BagFIFO 
+- GiveSurpriseAndApplause LIFO + BagLIFO
+- GiveSurpriseAndApplause LIFO + BagRandom
+- GiveSurpriseAndApplause RANDOM + BagFIFO 
+- GiveSurpriseAndApplause RANDOM + BagLIFO
+- GiveSurpriseAndApplause RANDOM + BagRandom
+
+- GiveSurpriseAndSing FIFO + BagFIFO 
+- GiveSurpriseAndSing FIFO + BagLIFO
+- GiveSurpriseAndSing FIFO + BagRandom
+- GiveSurpriseAndSing LIFO + BagFIFO 
+- GiveSurpriseAndSing LIFO + BagLIFO
+- GiveSurpriseAndSing LIFO + BagRandom
+- GiveSurpriseAndSing RANDOM + BagFIFO 
+- GiveSurpriseAndSing RANDOM + BagLIFO
+- GiveSurpriseAndSing RANDOM + BagRandom
+
+- GiveSurpriseAndHug FIFO + BagFIFO 
+- GiveSurpriseAndHug FIFO + BagLIFO
+- GiveSurpriseAndHug FIFO + BagRandom
+- GiveSurpriseAndHug LIFO + BagFIFO 
+- GiveSurpriseAndHug LIFO + BagLIFO
+- GiveSurpriseAndHug LIFO + BagRandom
+- GiveSurpriseAndHug RANDOM + BagFIFO 
+- GiveSurpriseAndHug RANDOM + BagLIFO
+- GiveSurpriseAndHug RANDOM + BagRandom

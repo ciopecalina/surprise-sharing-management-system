@@ -1,0 +1,81 @@
+1. Initialization of Surprises:
+Candies, FortuneCookie, and MinionToy surprises are created:
+• Candies are initialized with the specified number and type.
+• FortuneCookie is initialized with a message based on the index.
+• MinionToy is initialized with a name based on the index.
+
+
+2. Testing Each Bag Type (FIFO, LIFO, RANDOM):
+For each type of bag, namely BagFIFO, BagLIFO, and BagRandom:
+• The respective bag is created.
+• Candies, MinionToy, and FortuneCookie surprises are added to the bag.
+• The size of the bag is checked before and after each addition operation.
+• One surprise is extracted from the bag, and the size is checked after each extraction.
+
+
+3. Testing Surprise Distribution Methods (GiveSurpriseAndApplause, GiveSurpriseAndSing, GiveSurpriseAndHug):
+For each distribution method and bag type combination:
+• An object is created with the specified behavior and waiting time.
+• Candies, MinionToy, and FortuneCookie surprises are added.
+• All surprises are given at once using “giveAll”.
+• The same object is reconstructed, and each surprise is given one at a time using “give”.
+
+This scenario is tested for each of the following combinations:
+- GiveSurpriseAndApplause - FIFO
+- GiveSurpriseAndApplause - LIFO
+- GiveSurpriseAndApplause - RANDOM
+- GiveSurpriseAndSing - FIFO
+- GiveSurpriseAndSing - LIFO
+- GiveSurpriseAndSing - RANDOM
+- GiveSurpriseAndHug - FIFO
+- GiveSurpriseAndHug - LIFO
+- GiveSurpriseAndHug - RANDOM
+
+
+4. Testing Bag Fusion:
+• Two bags of different types are created to test bag fusion, where the first bag contains all surprises.
+• The size of both bags is displayed.
+• Surprises are added to both bags.
+• The size of both bags is displayed again.
+• The contents of the second bag are transferred to the first bag.
+• The size of both bags after the transfer is displayed.
+• Surprises are extracted from the first bag until it is empty, and the size is checked after each extraction.
+
+This scenario is tested for various combinations of bag types and surprise distribution methods to ensure comprehensive testing:
+- BagFIFO + BagLIFO
+- BagFIFO + BagRandom
+- BagLIFO + BagFIFO
+- BagLIFO + BagRandom
+- BagRandom + BagFIFO 
+- BagRandom + BagLIFO 
+
+- GiveSurpriseAndApplause FIFO + BagFIFO 
+- GiveSurpriseAndApplause FIFO + BagLIFO
+- GiveSurpriseAndApplause FIFO + BagRandom
+- GiveSurpriseAndApplause LIFO + BagFIFO 
+- GiveSurpriseAndApplause LIFO + BagLIFO
+- GiveSurpriseAndApplause LIFO + BagRandom
+- GiveSurpriseAndApplause RANDOM + BagFIFO 
+- GiveSurpriseAndApplause RANDOM + BagLIFO
+- GiveSurpriseAndApplause RANDOM + BagRandom
+
+- GiveSurpriseAndSing FIFO + BagFIFO 
+- GiveSurpriseAndSing FIFO + BagLIFO
+- GiveSurpriseAndSing FIFO + BagRandom
+- GiveSurpriseAndSing LIFO + BagFIFO 
+- GiveSurpriseAndSing LIFO + BagLIFO
+- GiveSurpriseAndSing LIFO + BagRandom
+- GiveSurpriseAndSing RANDOM + BagFIFO 
+- GiveSurpriseAndSing RANDOM + BagLIFO
+- GiveSurpriseAndSing RANDOM + BagRandom
+
+- GiveSurpriseAndHug FIFO + BagFIFO 
+- GiveSurpriseAndHug FIFO + BagLIFO
+- GiveSurpriseAndHug FIFO + BagRandom
+- GiveSurpriseAndHug LIFO + BagFIFO 
+- GiveSurpriseAndHug LIFO + BagLIFO
+- GiveSurpriseAndHug LIFO + BagRandom
+- GiveSurpriseAndHug RANDOM + BagFIFO 
+- GiveSurpriseAndHug RANDOM + BagLIFO
+- GiveSurpriseAndHug RANDOM + BagRandom
+
